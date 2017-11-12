@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "JS Node Unit 1 Assignment 5",
   "main": "index.js",
-  "bin": "./index.js",
+  "bin": {
+    "githuh": "./index.js"
+  },
   "directories": {
     "test": "test"
   },

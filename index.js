@@ -28,20 +28,27 @@ catch(error){
 if(apiKey.length){
 	if(optValue != 'repos' &&  optValue != 'stars' && optValue != 'profile'){
 		console.error(`${optValue} is not a valid option, please try again`);
+	}else if(typeof userValue === "undefined"){
+		console.error('There is no User specified');
 	}else{
-		let gitQ = new gitHubQ(apiKey);
-		switch(optValue){
-			case 'repos':
-				gitQ.userRepos(userValue);
-				break;
+		try{
+			let gitQ = new gitHubQ(apiKey);
+			switch(optValue){
+				case 'repos':
+					gitQ.userRepos(userValue);
+					break;
 
-			case 'stars':
-				gitQ.userStarred(userValue);
-				break;
+				case 'stars':
+					gitQ.userStarred(userValue);
+					break;
 
-			case 'profile':
-				gitQ.userProfile(userValue);
-				break;
+				case 'profile':
+					gitQ.userProfile(userValue);
+					break;
+			}
+		}
+		catch(error){
+			console.log(error.message);
 		}
 	}
 }

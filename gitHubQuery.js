@@ -41,8 +41,7 @@ class gitHubQuery{
 			if(!error & response.statusCode == 200){
 				callback(JSON.parse(body));
 			}else{
-				let testfl = `error:\n${error}\nresponse:\n${response}\nbody:${body}`;
-				console.log(testfl);
+				console.error(body.substring(body.search(':') + 1,body.search(',')));
 			}
 		});
 	}
