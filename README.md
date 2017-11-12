@@ -7,7 +7,7 @@ githuh, when run will first ask for an OAuth token. This token is stored locally
 
 valid syntax for the command line interface:
 
-githuh <repos|stars|profile> <github username>
+githuh <repos|stars|profile> <username>
 
 Both options are required.
 
