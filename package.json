@@ -1,0 +1,29 @@
+{
+  "name": "githuh",
+  "version": "1.0.0",
+  "description": "JS Node Unit 1 Assignment 5",
+  "main": "index.js",
+  "bin": "./index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GeneTinderholm/assignment_githuh.git"
+  },
+  "author": "Gene Tinderholm",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GeneTinderholm/assignment_githuh/issues"
+  },
+  "homepage": "https://github.com/GeneTinderholm/assignment_githuh#readme",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "prompt": "^1.0.0",
+    "request": "^2.83.0"
+  },
+  "devDependencies": {}
+}
